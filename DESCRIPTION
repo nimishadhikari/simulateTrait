@@ -1,0 +1,16 @@
+Package: simulateTrait
+Title: Simulates correlated traits for incident and subsequent event (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person("Nimish", "Adhikari", , "nimishadhikari@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Simulates trait for incident and subsequent events.Users can specify heritability for each traits and specify the amount the the heritabily that affects variation in the outcome for incident event. The simulation also models a shared confounder, specified by the variance, and random error.Simulation can be performed to create and independent dataset or use a reference panel.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports:
+  mvtnorm (>= 1.2-2),
+  Rcpp (>= 1.0.11),
+  PhenotypeSimulator (>= 0.3.4)
