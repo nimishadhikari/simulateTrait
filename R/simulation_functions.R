@@ -88,7 +88,7 @@ qtY<-qtY-mean(qtY)
 #hyhat<-Yva/var(qtY) #h2
 
 return(list(incident_trait = qtX, subsequent_trait = qtY,
-            genotype_matrix = gen_matrix))
+            genotype_matrix = gen_matrix, trueX = Xbetas, trueY = Ybetas))
 }
 
 #' Simulate Incident and subsequent trait for LD correlated SNPs
