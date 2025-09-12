@@ -26,7 +26,7 @@
 simul_independent <- function(nsnps, nind, h2_overall,
                               h2_incidentonly,
                               pd=0, cv=0.4, ev=0.1,
-                              minfreq=0.01, maxfreq=0.49, 
+                              minfreq=0.01, maxfreq=0.49, bxy = 0, 
                               pi=c(0.05,0.05,0.05)) {
 
 # simulate MAF for the individual SNPs between 0.01-0.49 
@@ -78,7 +78,8 @@ qtX<-qtX-mean(qtX)
 # Create quantitative trait for Y 
 # Y = \beta_GY G + \beta_YU U + \beta_XY X + E_y
 # beta_XY is effect of incidence on subsequent event
-bxy <- 0 #following dudbridge
+# bxy <- 0 #following dudbridge
+# can put whatever value required for bxy
 
 Yval <- t(gen_matrix)%*%(Ybetas)
 Yva<-var(Yval)
